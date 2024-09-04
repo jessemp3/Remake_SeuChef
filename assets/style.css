@@ -91,6 +91,10 @@ li a{
       width: 10%;
       padding: 15px;
     }
+
+    .icons div:hover{
+      scale: 1.1;
+    }
     
   .h1-hero-section{
     width: 50%;
@@ -116,29 +120,47 @@ li a{
   .plate1 {
     position: absolute;
     left: 750px;
-    top: 320px;
+    top: 310px;
     z-index: 1;
+    width:320px;
+    height:320px;
   }
 
   .plate2 {
     position: absolute;
-    left: 1100px;
+    left: 1090px;
     top: 150px;
     z-index: 1;
+    width: 300px;
+    height: 300px;
   }
 
   .plate3 {
     position: absolute;
-    left: 670px;
-    top: 720px;
+    left: 630px;
+    top: 656px;
     z-index: 1;
+    width: 340px;
+    height: 340px;
   }
 
   .plate4 {
     position: absolute;
-    left: 1420px;
-    top: 295px;
+    left: 1390px;
+    top: 220px;
     z-index: 1;
+    width: 390px;
+    height: 390px;
+  }
+
+  .plate5 {
+    display: none;
+    position: absolute;
+    left: 1390px;
+    top: 220px;
+    z-index: 1;
+    width: 320px;
+    height: 320px;
   }
 
   .plate-img {
@@ -147,7 +169,6 @@ li a{
     transition: opacity 0.4s ease;
     object-fit: contain;
     opacity: 1;
-    scale: 0.8;
     transform: rotate(0deg);
     filter: blur(2px);
   }
@@ -156,7 +177,7 @@ li a{
     opacity: 1;
     cursor: pointer;
     animation-play-state: running;
-    scale: 1;
+    transform: rotate(0deg) scale(1.1);
     filter: blur(0px);
   }
 
@@ -230,6 +251,7 @@ li a{
   .div-button-right button{
     width: 25%;
     height: 56px;
+    font-size: 1.5rem;
     border-radius: 10px;
     background-color: #F99A56 !important;
   }
@@ -281,13 +303,21 @@ li a{
     justify-content: center;
   }
 
+  .left-side-chefs .btn{
+    font-size: 1.5rem;
+  }
+
+.btn-chefs:hover{
+    scale: 1.1;
+  }
+
   .container4{
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
-    max-height: 60vh;
+    max-height: 90vh;
   }
 
   .img-we{
@@ -321,13 +351,193 @@ li a{
     justify-content: center;
   }
 
+  .interprise-description em{
+    color: rgba(255, 123, 0, 1);
+  }
+
 
   .interprise-description p {
     display: flex;
     flex-direction: column;
-    width: 60%;
-    align-items: end;
+    width: 70%;
+    align-items: start;
     justify-content: center;
+  }
+
+  
+  /*  paralexx card*/
+  
+  .container5{
+    /* margin-top:; */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: row; */
+    min-height: 100vh;
+  }
+  
+  .container5 h1{
+    width: 100%;
+    text-align: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .title-equipe-desenvolvimento em{
+    color: rgba(255, 123, 0, 1);
+  }
+
+
+  .parralex-car{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row-reverse;
+
+  }
+  
+  .card-title{
+    display: flex;
+    width: 55%; 
+    height: 170px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255 , 0.7);
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+  }
+
+  .card-title h1{
+    align-items: start !important;
+  }
+  
+  .card-title h1, p{
+    color: black !important;
+  }
+  
+  
+  .wrap {
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+  
+    cursor: pointer;
+  }
+  
+  .container {
+    --rX: 0;
+    --rY: 0;
+    --bX: 50%;
+    --bY: 80%;
+  
+    width: 30rem;
+    height: 36rem;
+    border: 1px solid var(--background-color);
+    border-radius: 1.6rem;
+    padding: 4rem;
+  
+    display: flex;
+    align-items: flex-end;
+  
+    position: relative;
+    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+    background-position: var(--bX) var(--bY);
+    /* background-size: 40rem auto; */
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  
+    transition: transform .6s 1s;
+  }
+  
+  .container--1{
+    background: url('./imgs/parallex-card/kaique.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  }
+  
+  .container--2{
+    background: url('./imgs/parallex-card/Jefferson\ de\ Jesus\ da\ Silva.jpg');
+    background-size:cover;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  }
+  
+  .container--3{
+    background: url('.//imgs/parallex-card/Yuri\ Nascimento\ da\ Silva.jpg');
+    background-size: cover;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  }
+
+  .container--4{
+    background: url('./imgs/parallex-card/foto\ guilherme.jpg');
+    background-size: cover;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
+  }
+
+  .container--5{
+    background: url(https://avatars.githubusercontent.com/u/178921273?v=4);
+    background-size: 44rem auto;
+    /* box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2); */
+  }
+  
+  .container::before,
+  .container::after {
+    content: "";
+  
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+  
+    position: absolute;
+    z-index: 2;
+  
+    opacity: .3;
+    transition: .3s;
+  }
+  
+  .container::before {
+    top: 2rem;
+    right: 2rem;
+  
+    border-bottom-width: 0;
+    border-left-width: 0;
+  }
+  
+  .container::after {
+    bottom: 2rem;
+    left: 2rem;
+  
+    border-top-width: 0;
+    border-right-width: 0;
+  }
+  
+  .container--active {
+    transition: none;
+  }
+  
+  
+  
+  .container p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size:1.3rem;
+    font-weight: 600;
+  }
+  
+  .wrap:hover .container::before,
+  .wrap:hover .container::after {
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+  }
+  
+  .abs-site-link {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: hsla(0, 0%, 0%, .6);
+    font-size: 1.6rem;
   }
 
 
