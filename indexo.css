@@ -919,7 +919,8 @@ footer{
   padding: 1vh;
   font-family: "Josefin Sans", system-ui;
   width: 100%;
-  height: 40vh;
+  padding-top: 30px;
+  height: 50vh;
   background-color: #e8e8e8;
   display: flex;
   justify-content: center;
@@ -943,6 +944,7 @@ footer{
 }
 
 .footerM{
+  gap: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -951,6 +953,7 @@ footer{
 }
 
 .footerE{
+  gap: 20px;
   display: flex;
   flex-direction: column;
   text-align: center;
