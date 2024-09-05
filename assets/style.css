@@ -35,16 +35,17 @@ li a{
 }
 
 
-  .logo-img {
-    width: 175px !important;
-    height: 70px;
+.logo-img {
+    /* width: 175; */
+    height: 50px;
     padding: 2px;
     flex-shrink: 0;
-  }
+}
 
-  .logo-img:hover{
+.logo-img:hover {
     scale: 1.5 !important;
-  }
+}
+
 
   .container1 {
     position: relative;
