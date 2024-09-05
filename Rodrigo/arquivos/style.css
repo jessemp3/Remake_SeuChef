@@ -71,6 +71,16 @@ header {
     color: #fff;
 }
 
+.containerAChefs {
+    color: #f54828;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.containerAChefs:hover{
+    color: white;
+}
+
 .text {
     text-align: left;
 }
