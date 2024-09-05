@@ -1,10 +1,45 @@
+@font-face {
+    font-family: 'josefins';
+    src: url('../../assets/fonts/JosefinSans-VariableFont_wght.ttf') ;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'josefins' !important;
     text-decoration: none;
     list-style: none;
+}
+
+
+#a{
+    background: rgba(255, 123, 0, 2) !important;
+}
+
+.navbar-brand {
+    font-family: "josefins";
+}
+
+.offcanvas-title{
+    color: #f54828 !important;
+}
+
+li a{
+    text-decoration: none !important;
+    color: black;
+}
+
+
+.logo-img {
+    /* width: 175px; */
+    height: 70px;
+    padding: 2px;
+    flex-shrink: 0;
+}
+
+.logo-img:hover {
+    scale: 1.1 !important;
 }
 
 body {
